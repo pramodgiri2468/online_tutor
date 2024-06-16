@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 nav{
@@ -84,7 +84,7 @@ footer{
 
 /* Login.php css */
 .form-deg{
-   padding-top: 200px;
+   padding-top: 100px;
 }
 
 .label-deg{
@@ -110,6 +110,6 @@ footer{
     font-weight: bold;
     width: 400px;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
 }
-

@@ -5,7 +5,7 @@ if(!isset($_SESSION['username'])){
     header("Location: login.php");
 }
 
-else if($_SESSION['is_teacher']=="1"){
+else if($_SESSION['is_teacher']=="0"){
     header("Location: login.php");
 }
 
@@ -13,7 +13,9 @@ else if($_SESSION['is_teacher']=="1"){
 
 
 
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,36 +34,41 @@ else if($_SESSION['is_teacher']=="1"){
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="">Student Dashboard</a>
-
-        <div class="logout">
-            <a href="logout.php" class="btn btn-primary">Logout</a>
-            </div>
-</header>
-
-<aside>
-    <ul>
-        <li>
-            <a href="">My Courses</a>
-</li>
-<li>
-            <a href="">My Results</a>
-</li>
-
-    </ul>
-    </aside>
+    
+   <?php include 'admin_sidebar.php'; ?>
 
     <div class="content">
-        <h1>Sidebar Accordion</h1>
-        <p>In this example, we have added an accordion and a dropdown menu inside the side navigation.
-            Click on both to understand how they differ from each other. The accordion will push down the content, while the dropdown lays over the content.</p>    
-        </p>
+        <h1>Add Student</h1>
+
+        <div> 
+            <form>
+                <div>
+                    <label>Username</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div>
+                    <label>password</label>
+                    <input type="text" name="password" required>
+                </div>
+                <div>
+                    <label>email</label>
+                    <input type="text" name="email" required>
+                </div>
+                <div>
+                    <label>is_teacher</label>
+                    <input type="boolean" name="is_teacher" required>
+                </div>
+
+                <div>
+                    
+                    <input type="submit" name="add_student" value="Add Student">
+                </div>
+            </form>
+            
+
+        </div>
+        
 </div>
 
 </body>
 </html>
-
-
-
-

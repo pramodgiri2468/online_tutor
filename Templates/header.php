@@ -18,6 +18,6 @@
                 </li>
             <?php else: ?>
                 <li><a href="login.php" class="btn btn-success">Login</a></li>
-                <li><a href="signup.php">Sign Up</a></li>
+                
             <?php endif; ?>
     </nav>
