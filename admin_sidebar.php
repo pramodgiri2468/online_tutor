@@ -10,10 +10,10 @@
     <ul>
        
 <li>
-            <a href="add_student.php">Add Student</a>
+            <a href="add_users.php">Add Users</a>
 </li>
 <li>
-            <a href="">View Student</a>
+            <a href="view_users.php">View Users</a>
 </li>
 <li>
             <a href="">Add teacher</a>
