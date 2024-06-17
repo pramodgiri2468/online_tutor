@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+error_reporting(0);
 if(!isset($_SESSION['username'])){
     header("Location: login.php");
 }
@@ -57,6 +58,15 @@ $result=mysqli_query($conn,$sql);
     <div class="content">
         <center>
         <h1>Users Data</h1>
+        <?php 
+        if(isset($_SESSION['message']))
+        {
+            echo $_SESSION['message'];
+            
+        }
+        unset($_SESSION['message']);
+
+        ?>
         <br>
         <table border="1px">
             <tr>
@@ -65,6 +75,7 @@ $result=mysqli_query($conn,$sql);
                 <th class="table_th">email</th>
                 <th class="table_th">is_teacher</th>
                 <th class="table_th">Delete</th>
+                <th class="table_th">Update</th>
             </tr>
 
             <?php 
@@ -96,7 +107,13 @@ $result=mysqli_query($conn,$sql);
 
             <td class="table_td">
             <?php 
-                echo "<a href='delete.php?user_id={$info['id']}'>Delete</a>";
+                echo "<a onClick=\"javascript:return confirm('Are You Sure to Delete.');\" class='btn btn-danger' href='delete.php?user_id={$info['id']}'>Delete</a>";
+                ?>
+            </td>
+
+            <td class="table_td">
+            <?php 
+                echo "<a class= 'btn btn-primary' href='update_users.php?user_id={$info['id']}'>Update</a>";
                 ?>
             </td>
             </tr>
