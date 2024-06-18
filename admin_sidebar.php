@@ -15,17 +15,13 @@
 <li>
             <a href="view_users.php">View Users</a>
 </li>
+
+
 <li>
-            <a href="">Add teacher</a>
+            <a href="add_courses.php">Add Courses</a>
 </li>
 <li>
-            <a href="">View Teacher</a>
-</li>
-<li>
-            <a href="">Add Courses</a>
-</li>
-<li>
-            <a href="">View Courses</a>
+            <a href="view_courses.php">View Courses</a>
 </li>
 
     </ul>
