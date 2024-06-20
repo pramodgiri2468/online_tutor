@@ -24,7 +24,7 @@
             <input type="checkbox" id="is_teacher" name="is_teacher"><br><br>
             <input type="submit" value="Register">
         </form>
-        <p>Already have an account? <a href="index.php">Login</a></p>
+        <p>Already have an account? <a href="login.php">Login</a></p>
     </div>
 
     <?php
