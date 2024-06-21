@@ -58,6 +58,7 @@ if (isset($_POST['update'])) {
             width: 400px;
             padding-bottom: 70px;
             padding-top: 70px;
+            margin-top: 100px;
         }
     </style>
 </head>

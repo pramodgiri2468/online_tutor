@@ -64,6 +64,31 @@ if (isset($_POST['add_user'])) {
             width: 400px;
             padding-top: 70px;
             padding-bottom: 70px;
+            margin-top: 100px;
+        }
+
+            /* Media queries for responsive layout */
+@media (max-width: 768px) {
+    .div_deg {
+        width: 90%; /* Adjust width to occupy 90% of the viewport */
+        max-width: 400px; /* Limit maximum width for readability */
+        padding: 30px; /* Add more padding for better spacing */
+    }
+
+    label {
+        width: 80px; /* Reduce label width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .div_deg {
+        padding-top: 50px; /* Adjust padding for smaller screens */
+        padding-bottom: 50px;
+    }
+
+    label {
+        width: 70px; /* Further reduce label width */
+    }
         }
     </style>
     <link rel="stylesheet" href="css/admin.css">

@@ -107,7 +107,7 @@ $result=mysqli_query($conn,$sql);
 
             <td class="table_td">
             <?php 
-                echo "<a onClick=\"javascript:return confirm('Are You Sure to Delete.');\" class='btn btn-danger' href='delete.php?user_id={$info['id']}'>Delete</a>";
+                echo "<a onClick=\"javascript:return confirm('Are You Sure to Delete.');\" class='btn btn-danger' href='delete_users.php?user_id={$info['id']}'>Delete</a>";
                 ?>
             </td>
 

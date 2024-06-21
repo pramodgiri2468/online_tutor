@@ -24,5 +24,6 @@
             <a href="view_courses.php">View Courses</a>
 </li>
 
+
     </ul>
     </aside>
