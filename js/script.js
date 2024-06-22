@@ -1,8 +1,11 @@
-let menuBtn = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .flex .navbar');
+// menu.js
 
-menuBtn.onclick = () => {
-    menuBtn.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-   
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
+
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    });
+});

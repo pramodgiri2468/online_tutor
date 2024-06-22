@@ -26,6 +26,7 @@
         <script src="../js/script.js"></script>
 
     </section>
+    <?php include 'components/footer.php'; ?>
         
             
     

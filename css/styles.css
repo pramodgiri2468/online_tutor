@@ -1,5 +1,4 @@
-/* header.csss */
-
+/* header.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -9,7 +8,6 @@
     --light-white: #aaa;
     --black: #3d3d3d;
     --light-bg: #4b4b4b;
-
 }
 
 *{
@@ -22,7 +20,6 @@
     text-decoration: none;
     transition: .2s linear;
     text-transform: capitalize;
-   
 }
 
 *::selection{
@@ -44,7 +41,6 @@ html{
 
 ::-webkit-scrollbar-track{
     background-color: transparent;
-    
 }
 
 ::-webkit-scrollbar-thumb{
@@ -60,7 +56,6 @@ section{
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-
 }
 
 .btn{
@@ -72,7 +67,6 @@ section{
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem 3rem;
-
 }
 
 .btn:hover{
@@ -86,7 +80,6 @@ section{
     font-size: 4rem;
     color: var(--white);
     padding-top: 7rem;
-    
 }
 
 .heading span{
@@ -100,7 +93,6 @@ section{
     right: 0;
     z-index: 1000;
     background-color: var(--light-bg);
-
 }
 
 .header .flex{
@@ -136,19 +128,15 @@ section{
 @media (max-width:991px){
     html{
         font-size: 55%;
-       
     }
 
     .home .row .content h3{
         font-size: 8rem;
     }
-
-    
 }
 
 @media (max-width:768px){
     #menu-btn{
-        
         display: inline-block;
     }
 
@@ -162,14 +150,14 @@ section{
         left: 0;
         right: 0;
         border-top: .1rem solid var(--light-white);
-        border-bottom: -1rem solid var(--light-white);
+        border-bottom: .1rem solid var(--light-white);
         background-color: var(--light-bg);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.5s ease-in-out;
     }
 
-    .header .flex .navbar .active{
+    .header .flex .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    
     }
 
     .header .flex .navbar a{
@@ -185,12 +173,12 @@ section{
 @media (max-width:450px){
     html{
         font-size: 50%;
-       
     }
     .home .row .content h3{
         font-size: 5rem;
     }
 }
+
 
 /* Css for index.php */
 .home{
@@ -343,6 +331,7 @@ section{
 /* CSS for footer */
 .footer{
     background-color: var(--light-bg);
+    text-align: center;
    
 }
 .footer .share a{
@@ -355,5 +344,22 @@ section{
     color: var(--white);
     background-color: var(--black);
 
+}
+
+.footer .share a:hover{
+    background-color: var(--green);
+}
+
+.footer .credit{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    padding: 1.5rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color:var(--light-white);
+}
+
+.footer .credit span{
+    color: var(--green);
 }
 

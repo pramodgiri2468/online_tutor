@@ -70,6 +70,7 @@
             }
         }
     </style>
+    <?php include 'components/header.php'; ?>
 </head>
 <body>
    <center>
@@ -101,5 +102,6 @@
         <p>Don't have an account? <a href="register.php">Register</a></p>
     </div>
    </center>
+   <?php include 'components/footer.php'; ?>
 </body>
 </html>

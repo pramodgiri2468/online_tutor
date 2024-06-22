@@ -24,7 +24,7 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
-        <script src="../js/script.js"></script>
+        <script src="js\script.js"></script>
             
 
         </section>

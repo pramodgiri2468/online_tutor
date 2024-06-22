@@ -33,6 +33,7 @@
             </div>
         </div>
     </section>
+    <?php include 'components/footer.php'; ?>
     
 </body>
 </html>
